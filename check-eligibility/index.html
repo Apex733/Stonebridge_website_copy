@@ -1032,17 +1032,19 @@
       border-radius: 0;
       border: 0;
       padding: 0;
-      display: grid;
-      grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
-      gap: clamp(32px, 6vw, 96px);
-      align-items: start;
-    }
-    .process-intro {
-      text-align: left;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
+      gap: clamp(32px, 6vw, 64px);
+    }
+    .process-intro {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: auto;
+      max-width: 800px;
+      margin: 0 auto;
     }
     .process-kicker {
       display: inline-flex;
@@ -1072,12 +1074,13 @@
     }
     .process-proof {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 12px;
+      gap: 16px;
       color: var(--c-grey);
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 700;
-      margin-top: var(--space-lg);
+      margin-top: 48px;
     }
     .process-proof strong {
       color: var(--c-purple);
@@ -1087,18 +1090,18 @@
       align-items: center;
     }
     .process-proof-icons span {
-      width: 34px;
-      height: 34px;
+      width: 56px;
+      height: 56px;
       border-radius: 50%;
       background: var(--c-purple);
-      border: 2px solid var(--c-white);
+      border: 3px solid var(--c-white);
       display: inline-flex;
       align-items: center;
       justify-content: center;
       color: var(--c-white);
-      font-size: 12px;
+      font-size: 18px;
       font-weight: 900;
-      margin-left: -8px;
+      margin-left: -12px;
     }
     .process-proof-icons span:first-child {
       margin-left: 0;
@@ -1106,7 +1109,7 @@
     }
     .finance-process .steps-grid {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
       gap: 26px;
       margin: 0;
       min-height: auto;
@@ -1170,6 +1173,10 @@
     }
     @media (max-width: 1023px) {
       .process-panel {
+        display: flex;
+        flex-direction: column;
+      }
+      .finance-process .steps-grid {
         grid-template-columns: 1fr;
       }
       .process-intro {
