@@ -1041,7 +1041,7 @@
       text-align: left;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
       height: 100%;
     }
     .process-kicker {
@@ -1072,12 +1072,13 @@
     }
     .process-proof {
       display: flex;
-      align-items: center;
-      gap: 12px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
       color: var(--c-grey);
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 700;
-      margin-top: var(--space-lg);
+      margin-top: 48px;
     }
     .process-proof strong {
       color: var(--c-purple);
@@ -1087,18 +1088,18 @@
       align-items: center;
     }
     .process-proof-icons span {
-      width: 34px;
-      height: 34px;
+      width: 56px;
+      height: 56px;
       border-radius: 50%;
       background: var(--c-purple);
-      border: 2px solid var(--c-white);
+      border: 3px solid var(--c-white);
       display: inline-flex;
       align-items: center;
       justify-content: center;
       color: var(--c-white);
-      font-size: 12px;
+      font-size: 18px;
       font-weight: 900;
-      margin-left: -8px;
+      margin-left: -12px;
     }
     .process-proof-icons span:first-child {
       margin-left: 0;
