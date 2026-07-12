@@ -55,9 +55,6 @@ h2 {
 }
 
 .heading-playfair-word {
-  font-family: "Playfair Display", serif !important;
-  font-style: italic !important;
-  font-weight: 400 !important;
   color: var(--c-purple) !important;
 }
 
