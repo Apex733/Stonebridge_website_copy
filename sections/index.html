@@ -1032,17 +1032,19 @@
       border-radius: 0;
       border: 0;
       padding: 0;
-      display: grid;
-      grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
-      gap: clamp(32px, 6vw, 96px);
-      align-items: start;
-    }
-    .process-intro {
-      text-align: left;
       display: flex;
       flex-direction: column;
+      gap: clamp(32px, 6vw, 64px);
+    }
+    .process-intro {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: flex-start;
-      height: 100%;
+      height: auto;
+      max-width: 800px;
+      margin: 0 auto;
     }
     .process-kicker {
       display: inline-flex;
@@ -1073,7 +1075,7 @@
     .process-proof {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       gap: 16px;
       color: var(--c-grey);
       font-size: 16px;
@@ -1107,7 +1109,7 @@
     }
     .finance-process .steps-grid {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
       gap: 26px;
       margin: 0;
       min-height: auto;
@@ -1171,6 +1173,10 @@
     }
     @media (max-width: 1023px) {
       .process-panel {
+        display: flex;
+        flex-direction: column;
+      }
+      .finance-process .steps-grid {
         grid-template-columns: 1fr;
       }
       .process-intro {
